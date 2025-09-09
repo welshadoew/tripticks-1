@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Pacific - Free Bootstrap 4 Template by Colorlib</title>
+  <title>Tripticks</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -27,7 +27,7 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Pacific<span>Travel Agency</span></a>
+      <a class="navbar-brand" href="index.html">Tripticks<span>Travel Agency</span></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
         aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
@@ -242,23 +242,10 @@
   <script src="js/scrollax.min.js"></script>
   <script src="js/main.js"></script>
 
-  <!-- Leaflet JS -->
+  <!-- LeafletJS -->
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <script>
-    // Tạo bản đồ tại Hà Nội
-    var map = L.map('map').setView([21.0278, 105.8342], 13);
+  <script src="js/google-map.js"></script>
 
-    // Load nền bản đồ từ OpenStreetMap
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19,
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(map);
-
-    // Thêm marker
-    L.marker([21.0278, 105.8342]).addTo(map)
-      .bindPopup("<b>Pacific Travel Agency</b><br>Địa chỉ tại Hà Nội.")
-      .openPopup();
-  </script>
 
 </body>
 
